@@ -1,3 +1,9 @@
+/**
+*Java_1_level_HomeWork_1
+*
+*@author Marina Bakhareva
+*@version 10.12.2021
+*/
 /*task_1*/
 class HomeWorkApp {
     public static void main(String[] args) {
