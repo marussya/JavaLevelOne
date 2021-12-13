@@ -24,6 +24,7 @@ class HomeWorkTwo {
             return false;
         }
     }
+    задача в комментарии была закомментирована мною изначально для примера логики
     */
     
     static boolean isSumWithin10and20(int x, int y) {
@@ -32,12 +33,17 @@ class HomeWorkTwo {
     
     /*task_2*/
     
-    static void isPositiveOrNegative(int x) {
+/*    static void isPositiveOrNegative(int x) {
         if (x >= 0) {
             System.out.println("Number is positive");
         } else {
             System.out.println("Number is negative");
         }
+    }
+    ниже задание исправлено по результатам разбора ДЗ
+    */
+    static void isPositiveOrNegative(int x) {
+        System.out.println(x >= 0? "Number is positive" : "Number is negative");
     }
     
     /*task_3*/
@@ -48,6 +54,7 @@ class HomeWorkTwo {
     
     /*task_4*/
     
+    /*лучше назвать метод repeatString (по результатам разбора ДЗ) */
     static void printStringInTimes(String str, int n) {
         for (int i = 1; i <= n; i++) {
             System.out.println(str);
