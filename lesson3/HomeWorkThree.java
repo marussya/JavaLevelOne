@@ -14,7 +14,8 @@ class HomeWorkThree {
         multiplyLessThanSix();
         fillDiagonal(11);
         System.out.println(Arrays.toString(getArray(10, 5)));
-        getMinMax();
+        int[] arr6 = {1, 5, 3, 2, -11, 4, 5, 212, 4, 8, 9, 1, 185, -6};
+        getMinMax(arr6);
         System.out.println(checkBalance());
 
     }
@@ -76,22 +77,44 @@ class HomeWorkThree {
 /*task_5 - написать метод, принимающий аргументы len и initialValue 
 и возвращающий одномерный массив типа int длиной len, 
 каждая ячейка которого равна initialValue*/
-    static int[] getArray(int len, int initialValue){
+/*    static int[] getArray(int len, int initialValue){
         System.out.println("task_5");
         int[] arr = new int[len];
         for (int i = 0; i < len; i++){
             arr[i] = initialValue;
             }
         return arr;
+    }*/
+    //переписала метод с испльзованием метода Arrays.fill
+    static int[] getArray(int len, int initialValue){
+        System.out.println("task_5");
+        int[] arr = new int[len];
+        Arrays.fill(arr, initialValue);
+        return arr;
     }
     
 /*task_6 - Задать одномерный массив и найти в нем минимальный и 
 максимальный элементы*/
-    static void getMinMax(){
+/*    static void getMinMax(){
         System.out.println("task_6");
         int[] arr = {1, 5, 3, 2, -111, 4, 5, 2, 4, 8, 9, 1, 185, -66};
         int min = 0;
         int max = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+            else if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        System.out.println("Minimum value = " + min);
+        System.out.println("Maximum value = " + max);
+    }*/
+    static void getMinMax(int[] arr){
+        System.out.println("task_6");
+        int min = arr[0];
+        int max = arr[0];
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] < min) {
                 min = arr[i];
